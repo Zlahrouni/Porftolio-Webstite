@@ -44,16 +44,16 @@
       flex-direction: column;
   
       div {
-        width: 5px;
+        width: 25px;
         height: 5px;
         background: transparent;
-        border-radius: 50%;
+        border-radius: 20%;
   
         margin-bottom: 5px;
       }
   
       a {
-        color: var(--gray-color);
+        color: var(--white-color);
         text-decoration: none;
         flex-direction: column;
         text-transform: uppercase;

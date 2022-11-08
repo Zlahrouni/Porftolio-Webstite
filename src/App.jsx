@@ -7,8 +7,9 @@ import About from './container/About/About'
 import Portfolio from './container/Portfolio/Portfolio'
 import Contact from './container/Contact/Contact'
 
+
 //Components
-import Navbar from './components/Navbar/Navbar'
+import { Navbar } from './components'
 
 //Style
 import './App.scss'

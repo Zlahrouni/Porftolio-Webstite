@@ -1,4 +1,5 @@
 import React from 'react'
+import { AppWrap } from '../../Wrapper'
 
 import './Portfolio.scss'
 
@@ -8,4 +9,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default AppWrap(Portfolio, 'portfolio')
