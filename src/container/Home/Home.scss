@@ -1,18 +1,3 @@
-#home {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-  
-    // disable the default padding styles
-    .app__wrapper {
-      padding: 0;
-  
-      .copyright {
-        display: none;
-      }
-    }
-  }
 
   .header__cont {
       display: flex;
@@ -53,54 +38,7 @@
       padding: 6rem 1rem 2rem;
     }
   }
-  
-  .app__header-info {
-    flex: 0.65;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-  
-    margin: 0 2rem;
-  
-    @media screen and (max-width: 1200px) {
-      width: 100%;
-      margin-right: 0rem;
-    }
-  }
-  
 
-  
-  .app__header-img {
-    flex: 1;
-    height: 100%;
-  
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-  
-    img {
-      width: 100%;
-      object-fit: contain;
-      z-index: 1;
-    }
-  
-    .overlay_circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 0;
-      width: 100%;
-      height: 90%;
-    }
-  
-    @media screen and (max-width: 1200px) {
-      margin: 2rem 0;
-    }
-  }
 
   .app__header-social {
     display: flex;
@@ -126,32 +64,7 @@
   
       transition: all 0.3s ease-in-out;
   
-      svg {
-        width: 15px;
-        height: 15px;
-        color: var(--gray-color);
-      }
-  
-      &:hover {
-        background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
-  
-        svg {
-          color: var(--white-color);
-        }
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 70px;
-        height: 70px;
-  
-        margin: 0.5rem 0;
-  
-        svg {
-          width: 30px;
-          height: 30px;
-        }
-      }
+
     }
   }
 
