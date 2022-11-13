@@ -196,7 +196,9 @@
     cursor: pointer;
     border: 1px solid #B3DEE5;
     transform: all 400ms ease;
-    
+    display: flex;
+    flex-direction: row;
+
     a {
         text-decoration: none;
     }

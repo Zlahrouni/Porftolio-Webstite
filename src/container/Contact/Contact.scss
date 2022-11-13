@@ -1,3 +1,9 @@
+.app__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 body.active-modal {
     overflow-y: hidden;
   }
@@ -93,6 +99,7 @@ body.active-modal {
           font-family: var(--font-base);
           color: var(--secondary-color);
           outline: none;
+          
         }
     
         textarea {
@@ -103,6 +110,7 @@ body.active-modal {
           box-shadow: 0 0 10px var(--primary-color);
         }
       }
+
       
       
     

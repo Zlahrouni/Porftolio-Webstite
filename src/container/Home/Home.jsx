@@ -17,8 +17,8 @@ const Home = () => {
     >
       
       <div className='header__cont'>
-      
-        <div className='home-title head-text '>Ziad Larhouni</div>
+        <h4 className='white-text'>Hi, I'm</h4>
+        <div className='home-title '>Ziad Larhouni</div>
         <h3 className="white-text">L3 en Conception et Developpement d'Applications</h3>
 
         <div className="app__header-social">
@@ -28,7 +28,7 @@ const Home = () => {
        </div>
        <br />
        
-       <a className='btn btn-primary' href="/About">See More <BsChevronDoubleRight/></a>
+       <a className='btn btn-primary' href="/About">About Me <BsChevronDoubleRight className='Rchevron'/></a>
        
       </div>
       

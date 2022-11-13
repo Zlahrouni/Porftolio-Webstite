@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com'
 import ReCAPTCHA from "react-google-recaptcha";
 import { Popup } from '../../components';
 import {AiOutlineMail, AiOutlinePhone} from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 
 import './Contact.scss'
@@ -45,9 +46,14 @@ const Contact = () => {
   }
 
   return (
-    <>
-      <h2 className="head-text head-text-margin">Contact Me</h2>
-      <div className="app__footer-cards">
+      <motion.div
+      whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.6 }}
+      className="app__contact"
+      >
+        <>
+        <h2 className="head-text head-text-margin">Contact Me</h2>
+        <div className="app__footer-cards">
         
           {!validCaptcha ? (
             
@@ -90,30 +96,26 @@ const Contact = () => {
       <Popup trigger={Captcha} setTrigger={setCaptcha}>
         <h3 className='about'>Êtes-vous un robot ? 🤔:</h3> <br />
         <ReCAPTCHA
-            sitekey= "6LeOvmgiAAAAAPKlEivpbz8RjA_KgTJ561UZpCre" // change this
+            sitekey= "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // change this fake google recaptcha key
             onChange={onValid}
           />
       </Popup>
-
-      {/*
-      6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI //fake
-      */}
       
       
       
         <form ref={form} onSubmit={sendEmail} >
         <div className='app__footer-form app__flex'>
           <div  className="app__flex work-item-container">
-            <input className='p-text work-item-container about' type="text" name='name' placeholder='Votre nom*' required/>
+            <input className='p-text text-area' type="text" name='name' placeholder='Votre nom*' required/>
           </div>
           <div className="app__flex">
-            <input className='p-text work-item-container about' type="text" name='entreprise' placeholder='Entreprise' />
+            <input className='p-text text-area' type="text" name='entreprise' placeholder='Entreprise' />
           </div>
           <div className="app__flex">
-            <input className='p-text work-item-container about' type="email" name='email' placeholder='votre email*' required/>
+            <input className='p-text text-area' type="email" name='email' placeholder='votre email*' required/>
           </div>
           <div className="app__flex">
-          <textarea name="message" className='work-item-container about' rows="7" placeholder='votre message...*' required></textarea>
+          <textarea name="message" className='text-area' rows="7" placeholder='votre message...*' required></textarea>
           </div>
           <button className='app__footer-button' type='submit' >Envoyer le message</button>
         </div>
@@ -122,8 +124,10 @@ const Contact = () => {
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
           <h3 className='about'>Merci pour votre message!</h3>
         </Popup>
+        </>
+      </motion.div>
+      
         
-    </>
   );
 }
 

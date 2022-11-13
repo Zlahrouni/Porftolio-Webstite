@@ -23,8 +23,10 @@
   }
   .home-title{
     display: flex;
-    font-size: 800;
+    font-size: 2.75rem;
+    font-weight: 800;
     padding-right: 180px;
+    color: #774360;
     @media screen and (max-width: 550px) {
       padding-right: 0px;
     }
@@ -151,6 +153,10 @@
         }
       }
     }
+  }
+
+  .Rchevron {
+    margin: 3px 5px;
   }
 
   
