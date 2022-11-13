@@ -34,7 +34,7 @@ const Portfolio = () => {
                 className="app__work-hover app__flex"
               >
                 
-                <a href="https://dribbble.com" target="_blank" rel="noreferrer">
+                <a className='app__work-a-pc' href="https://dribbble.com" target="_blank" rel="noreferrer">
 
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -46,7 +46,7 @@ const Portfolio = () => {
                   </motion.div>
                 </a>
               
-                <a href="https://github.com/zlahrouni" target="_blank" rel="noreferrer">
+                <a className='app__work-a-pc' href="https://github.com/zlahrouni" target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -62,6 +62,12 @@ const Portfolio = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text about">Title</h4>
               <p className="p-text about-primary work-description" style={{ marginTop: 10 }}>"Desc :Lorem ipsum dolor sit amet."</p>
+              {/*For mobile */}
+              <div className='app_work-mobile'>
+                <a href="">Live Demo</a>
+                <a href="">Code</a>
+              </div>
+              
 
             </div>
             
@@ -80,7 +86,7 @@ const Portfolio = () => {
                 className="app__work-hover app__flex"
               >
                 
-                <a href="https://dribbble.com" target="_blank" rel="noreferrer">
+                <a className='app__work-a-pc' href="https://dribbble.com" target="_blank" rel="noreferrer">
 
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -92,7 +98,7 @@ const Portfolio = () => {
                   </motion.div>
                 </a>
               
-                <a href="https://github.com/zlahrouni" target="_blank" rel="noreferrer">
+                <a className='app__work-a-pc' href="https://github.com/zlahrouni" target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -108,7 +114,11 @@ const Portfolio = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text about">Title</h4>
               <p className="p-text about-primary work-description" style={{ marginTop: 10 }}>"Desc :Lorem ipsum dolor sit amet."</p>
-
+              {/*For mobile */}
+              <div className='app_work-mobile'>
+                <a href="">Live Demo</a>
+                <a href="">Code</a>
+              </div>
             </div>
             
           </div>
@@ -127,7 +137,7 @@ const Portfolio = () => {
                 className="app__work-hover app__flex"
               >
                 
-                <a href="https://dribbble.com" target="_blank" rel="noreferrer">
+                <a className='app__work-a-pc' href="https://dribbble.com" target="_blank" rel="noreferrer">
 
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -139,12 +149,12 @@ const Portfolio = () => {
                   </motion.div>
                 </a>
               
-                <a href="https://github.com/zlahrouni" target="_blank" rel="noreferrer">
+                <a className='app__work-a-pc' href="https://github.com/zlahrouni" target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
-                    className="app__flex"
+                    className="app__flex pc-icons"
                   >
                     <AiFillGithub />
                   </motion.div>
@@ -155,7 +165,11 @@ const Portfolio = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text about">Title</h4>
               <p className="p-text about-primary work-description" style={{ marginTop: 10 }}>"Desc :Lorem ipsum dolor sit amet."</p>
-
+              {/*For mobile */}
+              <div className='app_work-mobile'>
+                <a href="">Live Demo</a>
+                <a href="">Code</a>
+              </div>
               
             </div>
             
