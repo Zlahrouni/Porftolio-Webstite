@@ -26,14 +26,13 @@ const Contact = () => {
   const CaptchaPopup = (e) => {
     e.preventDefault();
     setCaptcha(true);
-    
   };
  
   
   const sendEmail = (e) => {
     e.preventDefault();
   
-    emailjs.sendForm('service_va4yxr7', 'template_bs5mmls', form.current, 'zw5MtDpOCLfjae3SO')
+    emailjs.sendForm('Set Your service id', 'Set Your template', form.current, 'Your public key')
     setButtonPopup(true)
     e.target.reset();
     
@@ -60,7 +59,7 @@ const Contact = () => {
               <a onClick={CaptchaPopup}>
                 <div className="app__footer-card  ">
                   <AiOutlineMail/>
-                  <div className='about'> : Cliquez pour afficher</div>
+                  <div className='about'> : Click to display</div>
                </div>
               </a>
             
@@ -78,7 +77,7 @@ const Contact = () => {
             <a onClick={CaptchaPopup}>
               <div className="app__footer-card">
                 <AiOutlinePhone/>
-                <div className='about'>: Cliquez pour afficher</div>
+                <div className='about'>: Click to display</div>
               </div>
             </a>
           
@@ -87,7 +86,7 @@ const Contact = () => {
           (
           <div className="app__footer-card">
             <AiOutlinePhone/>
-            <a href="tel:+33752964331" className="p-text about">: +33752964331</a>
+            <a href="tel:+3300000000" className="p-text about">: +3300000000</a>
           </div>
           
           )}
@@ -106,16 +105,16 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail} >
         <div className='app__footer-form app__flex'>
           <div  className="app__flex work-item-container">
-            <input className='p-text text-area' type="text" name='name' placeholder='Votre nom*' required/>
+            <input className='p-text text-area' type="text" name='name' placeholder='Your Name*' required/>
           </div>
           <div className="app__flex">
-            <input className='p-text text-area' type="text" name='entreprise' placeholder='Entreprise' />
+            <input className='p-text text-area' type="text" name='entreprise' placeholder='Company' />
           </div>
           <div className="app__flex">
-            <input className='p-text text-area' type="email" name='email' placeholder='votre email*' required/>
+            <input className='p-text text-area' type="email" name='email' placeholder='Your email*' required/>
           </div>
           <div className="app__flex">
-          <textarea name="message" className='text-area' rows="7" placeholder='votre message...*' required></textarea>
+          <textarea name="message" className='text-area' rows="7" placeholder='message...*' required></textarea>
           </div>
           <button className='app__footer-button' type='submit' >Envoyer le message</button>
         </div>
