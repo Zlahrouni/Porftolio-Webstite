@@ -9,7 +9,7 @@ This is a website that you can you to display your information about and also yo
 ### Prerequisite before making the build folder
    - Fill the `config.json` with the information needed <br/>
    
-![config.json](https://raw.githubusercontent.com/Zlahrouni/Porftolio-Webstite/main/Markdown-Assets/config.json.png?token=GHSAT0AAAAAABYULQRS73OFJD4YQP2EW6MGY3U7CXQ)
+![config.json](https://raw.githubusercontent.com/Zlahrouni/Porftolio-Webstite/main/Markdown-Assets/config.json.png?token=GHSAT0AAAAAABYULQRTKSROVK63RF7TN6USY3U7JHA)
 
 ## How to run 
  Make sure to type `npm i` before proceeding, so all the packages will be installed automatically. <br/>
