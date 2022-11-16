@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 //Container 
@@ -9,7 +9,7 @@ import Contact from './container/Contact/Contact'
 
 
 //Components
-import { Navbar } from './components'
+import { Navbar, Popup } from './components'
 
 //Style
 import './App.scss'

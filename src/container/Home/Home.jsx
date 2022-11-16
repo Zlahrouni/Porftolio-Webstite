@@ -1,23 +1,19 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { BsTwitter, BsGithub, BsChevronDoubleRight } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
-import { Popup } from "../../components";
-import AppWrap from "../../Wrapper/AppWrap";
-import assets from "../../constants/assets";
+
 
 import "./Home.scss";
 
 const Home = () => {
-  
   return (
     <div className="app__header app__flex app__container app__wrapper">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.6 }}
       >
-        
 
         <div className="header__cont">
           <h4 className="white-text">Hi, I'm</h4>

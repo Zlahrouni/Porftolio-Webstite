@@ -1,0 +1,1 @@
+export { default as configData} from './config.json'
