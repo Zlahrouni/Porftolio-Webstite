@@ -6,8 +6,12 @@
 
 This is a website that you can you to display your information about and also your work 
 
-## How to run the bot
+### Prerequisite before making the build folder
+   - Fill the `config.json` with the information needed <br/>
+
+## How to run 
  Make sure to type `npm i` before proceeding, so all the packages will be installed automatically. <br/>
+ after making your own changes type `npm run build`.
 
 
 <!-- CONTACT -->
