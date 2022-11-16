@@ -1,5 +1,5 @@
 {
-    "GOOGLE__CAPATCHA_TOKEN": "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+    "GOOGLE__CAPATCHA_TOKEN": "Your Google captcha key",
     "EMAILJS__SERVICE_ID": "Your Email Service ID ",
     "EMAILJS__TEMPLATE_ID": "Your Email Template ID",
     "EMAILJS__PUBLIC_KEY": "Your Public Key"
